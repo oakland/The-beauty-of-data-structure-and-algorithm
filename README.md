@@ -12,5 +12,6 @@ https://time.geekbang.org/column/126
 
 ## Refers
 学习数据结构和算法的过程中会发现很多不错的资源：
+- [本课程老师建的仓库](https://github.com/wangzheng0822/algo)，里面会有老师的更新代码。
 - [hackernoon](https://hackernoon.com/programming-with-js-insertion-sort-1316df8354f5)，这个作者写了很多 js 算法相关的文章，可以看他写的系列文章。
 - [bigOCheetSheet](http://bigocheatsheet.com/)，复杂度分析的结果有很多种，这些复杂度分析在坐标轴上的效果。
