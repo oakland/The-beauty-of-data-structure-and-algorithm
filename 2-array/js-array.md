@@ -21,3 +21,18 @@
 buffer -> view -> typed array，看完 mdn 中 typed array 一部分内容，感觉 view 把 buffer 解析成了 typed array。
 > A view provides a context — that is, a data type, starting offset, and the number of elements — that turns the data into a typed array.
 > 上面这段话是从 mdn 中摘取出来的。不看中间破折号包裹的内容，显然 view 提供了 context，context 将数据生成了 typed array。
+#### Understanding ECMAScript6
+这本书里 chapter 10 里有 typed array 的内容。
+其中提到了原生 JS 对于数据的按位操作是比较慢的，因为数字是按照 64 位浮点数的格式存储的，然后根据需要会转化成 32 位整数。这里就牵扯到之前头条面试的时候，面试官提到的一句，说在 js 中存储为 1 和 存储为 1.00000... 是一样的。因此为了节约空间复杂度，使用 null 作为 hash table 的值是更节约空间的。摘录一段文章中的内容
+> Arithmetic on native JavaScript numbers was too slow for WebGL because the numbers were stored in a 64-bit floating-point format and converted to 32-bit integers as needed. Typed arrays were introduced to circumvent this limitation and provide better performance for arithmetic operations. The concept is that any single number can be treated like an array of bits and thus can use the familiar methods available on JavaScript arrays.
+上面摘录中最后还说了一个概念，就是数字可以当做位数组来对待。
+其中还提到了 Javascript numbers are stored in IEEE 754 format，关于这个在字节跳动面试的时候面试官有提到过，说在 js 中 1 的存储方式和 1.000000000... 的存储方式是一样的，所以让 hash table 的 key 是 null 是最节省空间的。而不是 1。这个数字的存储方式在 xiaoshen 的分享 ppt 里也有提到。然后网上找了一篇文章写的也很系统。暂时记录，没有仔细看。[IEEE754浮点表示法详解](https://segmentfault.com/a/1190000010841961)。
+接着看。
+array buffer 实际上就是指定内存地址，和 C 语言中的 malloc() 有些类似。例如 `let buffer = new ArrayBuffer(10)` 就表示 allocate 10 bytes。
+这里需要注意，array buffer 的长度永远是初始化时设置的长度，创建之后可以改变存储的数据，但是无法改变这个内存的长度。
+> An array buffer always represents the exact number of bytes specified when it was created. You can change the data contained within an array buffer but never the size of the array buffer.
+
+##### 什么是View
+> Array buffers represent memory locations, and views are the interfaces you’ll use to manipulate that memory.
+view 其实就是操作内存空间的接口。reading and writing data 这部分中提到了 little endian 的问题，就是 xiaoshen 在 ppt 里提到的“大端和小端” 的问题，这个 little endian 就是“小端”的意思。
+typed arrays are views。
