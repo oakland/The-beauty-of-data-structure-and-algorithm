@@ -18,3 +18,6 @@
 
 ### typed array
 从 mdn 出来之后，打算看看 typed array 这部分内容，这部分应该是 js 更接近底层的内容。也是从 mdn 的 typed array 开始看。
+buffer -> view -> typed array，看完 mdn 中 typed array 一部分内容，感觉 view 把 buffer 解析成了 typed array。
+> A view provides a context — that is, a data type, starting offset, and the number of elements — that turns the data into a typed array.
+> 上面这段话是从 mdn 中摘取出来的。不看中间破折号包裹的内容，显然 view 提供了 context，context 将数据生成了 typed array。
