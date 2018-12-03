@@ -28,3 +28,23 @@ p->next = new_node;
 5. 求链表的中间节点
 
 可以通过看 js 数据结构和算法的书，来辅助学习这几个方法和操作。
+
+### Grokking algorithm
+这本书里的 chapter 2 里有关于数组和链表的内容，介绍的非常清晰。关于 linked list 和 array 的对比说的也很好。
+> Linked lists are great if you're going to read all the items at a time: you can read one item, follow the address to the next item, and so on. But if you're going to keep jumping around, linked lists are terrible. Arrays are different. You know the address for every item in your array.
+根据上面这段话，其实可以很明显的看出 linked list 和 array 之间的关系，以及他们各自适用的场景。
+
+### 常见的链表
+- 单链表
+- 双向链表
+- 循环链表
+
+### 算法思想
+...用空间换时间的设计思想。当内存空间充足的时候，如果我们更加追求代码的执行速度，我们就可以选择空间复杂度相对较高，但时间复杂度相对很低的算法或者数据结构。...缓存实际上就是利用了空间换时间的设计思想。
+cpu cache === processor cached，cpu 也会对数据进行缓存。这个应该是和操作系统相关的，可以看下这个机制和原理。
+> 数组简单易用，在实现上使用的是连续的内存空间，可以借助 CPU 的缓存机制，预读数组中的数据，所以访问效率更高。而链表在内存中并不是连续存储，所以对 CPU 缓存不友好，没办法有效预读。
+上面这段话解释了为什么数组用的比较多的原因。
+### LRU 缓存算法
+这个算法用的是链表，为什么？是因为插入更加方便吗？因为在寻找是否在缓存中的时候，都是用遍历的方式，对于数组和链表而言，都是一样的时间复杂度？
+### 课后思考题
+用单链表判断回文，以及时间复杂度和空间复杂度分析，需要仔细看看。
