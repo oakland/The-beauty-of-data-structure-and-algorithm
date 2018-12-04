@@ -10,7 +10,8 @@
 #### binary search
 这个部分定了一个函数 def binary_search，作者给这个函数的每一句都写了注释，虽然这个函数很简答，但是这个注释也值得看一下。
 首先 low 和 high，作者注释的是 keep track of which part of the list you are searching，其实这个也相当于一个指针。
-while low <= high，作者给的注释是 while you haven't narrowed it down to only one element...，这个解释也很妙。
+while low <= high，作者给的注释是 while you haven't narrowed it down to only one
+element...，这个解释也很妙。实际上，这个遍历的过程有点像“夹逼定理”的过程，在不断的缩小一个范围，当最大最小两个指针同时指向同一个元素的时候，就是这个遍历结束的时候。这个遍历的过程用到了两个指针，这也是一种常见的算法理论，就是使用两个指针会产生一些神奇的，更高的效率。比如在课程后面有人用单链表的方式判断回文就用到了两个指针。不过是快慢指针。而这个是高低两个指针，或者说前后，或者说上下两个指针。
 这两个注释对于理解代码有很大的帮助。
 
 > (Big O notation) tells you the number of operations an algorithm will take.
