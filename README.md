@@ -20,7 +20,11 @@ https://time.geekbang.org/column/126
 - [js interview](https://js-algorithms.tutorialhorizon.com/2015/10/12/binary-tree-traversal/)，这个网站把 js 算法按照不同公司的面试题分开，感觉非常有参考价值。综合评分 +++++
 - [geeksForGeeks](https://www.geeksforgeeks.org/)，这个网站是一个计算机相关的网站，可以根据语言分类，文章内容质量还可以。看到 doubly linked list 的时候，找到了一篇相关的文章，感觉质量还是不错的。[Doubly Linked List | Set 1 (Introduction and Insertion)](https://www.geeksforgeeks.org/doubly-linked-list/)
 - [一个写了很多算法的博客](http://blog.benoitvallon.com/)，这个博客里有很多 js 数据结构和算法的内容。
+- [javascript-interview-questions](https://javascriptinterviewquestions.com/)，搜 k sum 的时候搜出来的，[k sum](https://javascriptinterviewquestions.com/k-sum/)
 
 ## Book list
+### 用好豆瓣
+很多经典书籍，可能网络上没有资源或者暂时没打算看，买来也不会立即看，但是未来打算要看。可以好好利用好豆瓣这个平台，搜索这类书然后在都豆瓣这本书下面选择“想读”，这样未来有一天想看下自己要买什么书了，就可以去豆瓣找自己想看的书，然后筛选出一些书籍去购买。
+
 整个课程中老师给了一些书单，其中有一些是作者直接开源了书的内容，比如 grokking algorithm。但是还有一些书是没有资源的。需要自己买，这些书，我觉得是值得买的，但是目前时间有限的情况下。我需要把这些书列出来，等真正打算读的时候再买。否则现在买下来不看也算是一种浪费。
 - 大话数据结构，这本书豆瓣评分虽然不算很高，但是也是不错的评分。下面读者的留言普遍反映也不错。未来我打算买来纸质版看。
