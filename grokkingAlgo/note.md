@@ -35,3 +35,9 @@ O(n*Logn)。
 ### Chapter 7: Dijkstra's Algorithm
 这个算法很有意思，最开始我没看懂原理，但是看到第二个例子之后，我把第一个例子又模拟了一遍，感觉似乎看懂了。还没有真实代码去实践。第二个例子也是生活中的实际例子，感觉对实际生活也有很大的帮助。
 这个算法在百度搜索有视频，打开第一条就是爱奇艺的麻省理工算法导论的系列课程。然后去 B 站又搜了一下，发现很多相关资源可以看。比如麻省理工的课程在 B 站也有。今天看完一个算法的图解或者课程。
+
+### Chapter 8: Greedy Algorithm
+> A greedy algorithm is simple: at each step, pick the optimal move. In this case, each time you pick a class, you pick the class that ends the soonest. In technical terms: at each step you pick the locally optimal solution, and in the end you’re left with the globally optimal solution.
+贪婪算法的思路就是每一步都选择最优决定。
+
+百度百科对于贪婪算法的说明也还可以，里面有一些可以借鉴的内容，比如 dijkstra 算法就是 贪婪算法 的应用。
