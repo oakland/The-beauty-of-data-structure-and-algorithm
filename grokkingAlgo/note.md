@@ -41,3 +41,12 @@ O(n*Logn)。
 贪婪算法的思路就是每一步都选择最优决定。
 
 百度百科对于贪婪算法的说明也还可以，里面有一些可以借鉴的内容，比如 dijkstra 算法就是 贪婪算法 的应用。
+
+
+### Chapter 10: K-nearestneighbors
+- KNN is used for classification and regression and involves looking at the k-nearest neighbors.
+- Classification = categorization into a group.
+- Regression = predicting a response(like a number).
+- Feature extraction means converting an item (like a fruite or a user) into a list of numbers that can be compared.
+- Picking good features is an important part of a successful KNN algorithm.
+
