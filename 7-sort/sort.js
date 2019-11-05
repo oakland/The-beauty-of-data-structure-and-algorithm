@@ -1,10 +1,14 @@
 function bubbleSort(arr) {
   for(var i = 0; i < arr.length; i++) {
-    for(var j = 0; j < arr.length; j++) {
-      if () {
-        //
+    let flag = false;
+    for(var j = 0; j < arr.length - i - 1; j++) {
+      if (arr[j] > arr[j+1]) {
+        var temp = arr[j];
+        arr[j] = arr[j+1];
+        arr[j+1] = temp;
       }
     }
+    if(!flag) return;
   }
 }
 
@@ -27,6 +31,28 @@ function insertionSort(arr) {
   };
 }
 
-function selectionSort() {
-  //
+function selectionSort(arr) {
+  if(arr.length < 2) { return };
+
+  for (let i = 0; i < arr.length; i++) {
+    // 1. 将已排序的最后一个数作为参照
+    let index = i;
+    let min = arr[index];
+
+    // 2. 寻找未排序中的最小值
+    for (let j = i + 1; j < arr.length; j++) {
+      if(arr[j] <= min) {
+        index = j;
+        min = arr[j];
+      }
+    }
+
+    // 3. 互换未排序的数组中两个位置
+    if (index !== i) {
+      let temp = arr[i];
+      arr[i] = arr[index];
+      arr[index] = temp;
+    }
+  }
 }
+
