@@ -1,14 +1,15 @@
 function bubbleSort(arr) {
   for(var i = 0; i < arr.length; i++) {
-    let flag = false;
+    let swap = false;
     for(var j = 0; j < arr.length - i - 1; j++) {
       if (arr[j] > arr[j+1]) {
         var temp = arr[j];
         arr[j] = arr[j+1];
         arr[j+1] = temp;
+        swap = true;
       }
     }
-    if(!flag) return;
+    if(!swap) return;
   }
 }
 
@@ -19,7 +20,7 @@ function insertionSort(arr) {
     let value = arr[i];
     let j = i - 1;
 
-    for(; j >= 0; --j) {
+    for(; j >= 0; j--) {
       if(arr[j] > value) {
         arr[j+1] = arr[j]; // 后移一位
       } else { // 已经找到合适的位置了，不再遍历左侧已排序数组
